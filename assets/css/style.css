@@ -188,7 +188,6 @@ img {
 @media screen and (max-width: 980px) {
     .wrapper {
       width: 100%;
-      padding: 20px;
     }
 
     .headerContainer {
@@ -208,12 +207,20 @@ img {
         margin-left: 20px;
         font-size:30px;
     }
+
+    .footer {
+        width:100%;
+        margin-right:0;
+    }
+
+    #jenn {
+        width:25%;
+    }
 }
 
   @media screen and (max-width: 768px) {
     .wrapper {
       width: 100%;
-      padding: 20px;
     }
     .headerContainer {
         width:95%;
@@ -235,12 +242,14 @@ img {
         font-size:20px;
         margin-left:10px;
     }
+    #jenn {
+        width:20%;
+    }
 } 
 
 @media screen and (max-width: 640px) {
     .wrapper {
       width: 100%;
-      padding: 20px;
     }
       header {
         position:static;
@@ -273,7 +282,7 @@ img {
 
     .sectionContainer {
         width:90%;
-        margin-left:0;
+        margin-left:20px;
     }
     
     .project {
@@ -282,5 +291,9 @@ img {
     
     input[type=submit] {
         width: 100px;
+    }
+
+    #jenn {
+        width:25%;
     }
 } 
