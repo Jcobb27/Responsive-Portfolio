@@ -9,53 +9,67 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-<div class="wrapper">
-    <header>
-        <div class="headerContainer">
-            <h1 id="name">Jennifer Cobb</h1>
-            <ul>
-                <li>
-                    <a href="index.html">About</a>
-                </li>
-                <li>
-                    <a href="portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
+    <div class="wrapper">
+        <header>
+            <div class="headerContainer">
+                <h1 id="name">Jennifer Cobb</h1>
+                <ul>
+                    <li>
+                        <a href="index.html">About</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </header>
+
+        <div class="sectionContainer">
+            <h1 id="subheading">Contact</h1>
+            <div class="form">
+                <label for="yourName">Name</label>
+                <input type="text" id="yourName" name="yourname" placeholder="Your name..">
+    
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+    
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="mexico">Mexico</option>
+                    <option value="canada">Canada</option>
+                </select>
+    
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+    
+                <input type="submit" value="Submit">
+                </form>
+            </div>
+            <p id="linkedIn">
+                <a href="https://www.linkedin.com/in/jennifer-cobb-92a28065" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <!-- <a href="https://www.linkedin.com/in/jennifer-cobb-92a28065" target="_blank">Find me on LinkedIn</a> -->
+            </p>
+            <p id= "gitHub">
+                <a href="https://github.com/Jcobb27" target="_blank">
+                    <i class="fa fa-github"></i>
+                </a>
+                <!-- <a href="https://github.com/Jcobb27" target="_blank">Find me on Github</a> -->
+            </p>
         </div>
-        <div class="clearfix"></div>
-    </header>
-
-    <div class="sectionContainer">
-        <h1 id="subheading">Contact</h1>
-        <div class="form">
-            <label for="yourName">Name</label>
-            <input type="text" id="yourName" name="yourname" placeholder="Your name..">
-
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Your email..">
-
-            <label for="country">Country</label>
-            <select id="country" name="country">
-                <option value="usa">USA</option>
-                <option value="mexico">Mexico</option>
-                <option value="canada">Canada</option>
-            </select>
-
-            <label for="message">Message</label>
-            <textarea id="message"></textarea>
-
-            <input type="submit" value="Submit">
-            </form>
-        </div>
-
     </div>
-</div>
     <div class="footer">Designed by Jennifer Cobb</div>
 
 </body>

@@ -4,9 +4,6 @@ body {
     background-image: url("../images/leaves-pattern.png");
     height: 100%;
     margin: 0;
-  /*  min-height:100vh;
-    display:flex;
-    flex-direction:column;*/
 }
 
 header {
@@ -14,7 +11,7 @@ header {
     width: 100%;
     height: 75px;
     background-color: #ffffff;
-    z-index:99; 
+    z-index: 99;
 }
 
 #name {
@@ -46,7 +43,7 @@ li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 16px/*0px 16px 32px*/
+    padding: 16px;
     ;
     text-decoration: none;
     color: #777777;
@@ -74,7 +71,7 @@ li a:hover {
     width: 940px;
     background-color: #ffffff;
     overflow: auto;
-    flex:1;
+    flex: 1;
     padding: 0px 10px;
 }
 
@@ -125,12 +122,6 @@ input[type=submit]:hover {
     background-color: #A55C8B;
 }
 
-.form {
-    margin: 20px;
-    color: #777777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
 #message {
     height: 200px;
     width: 100%;
@@ -153,7 +144,7 @@ img {
 }
 
 .banner {
-    background-color: #449b96;
+    background-color: #0f8ca1;
     color: white;
     position: absolute;
     bottom: 15px;
@@ -165,7 +156,7 @@ img {
 
 .footer {
     left: 0;
-    right:0;
+    right: 0;
     bottom: 0;
     width: 100%;
     background-color: #666666;
@@ -179,121 +170,187 @@ img {
 }
 
 .wrapper {
-    display:flex;
-    flex-direction:column;
-    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     width: 100%;
 }
 
+.form {
+    margin: 20px;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* Style all font awesome icons */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+     width: 40%;
+    float:left; 
+    margin-top: 20px;
+    margin-left: 5px;
+    border-radius: 5px;
+  }
+
+  .fa-github {
+    background: #666666;
+    color: white;
+    width: 40%;
+    float: right;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+
+/* #linkedIn{
+    background-color: #007bb5;
+    width: 40%;
+    float:left;
+}
+#gitHub{
+    background-color: rgb(170, 170, 170);
+    width: 40%;
+    float:right;
+} */
+
+/*Media Screen Adjustments*/
+
 @media screen and (max-width: 980px) {
     .wrapper {
-      width: 100%;
+        width: 100%;
     }
-
     .headerContainer {
-        width:100%;
+        width: 100%;
     }
-
     .sectionContainer {
-        width:60%;
-        margin: 40px, auto, auto, 40px; 
-        margin:20px;
+        width: 60%;
+        margin: 40px, auto, auto, 40px;
+        margin: 20px;
     }
-
     input[type=submit] {
         width: 100px;
     }
     #name {
         margin-left: 20px;
-        font-size:30px;
+        font-size: 30px;
     }
-
     .footer {
-        width:100%;
-        margin-right:0;
+        width: 100%;
+        margin-right: 0;
     }
-
     #jenn {
-        width:25%;
+        width: 25%;
     }
+    .fa-linkedin {
+        float:none;
+        margin-left: 0;
+      }
+    
+      .fa-github {
+        float:none;
+        margin-left: 0;
+      }
 }
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .wrapper {
-      width: 100%;
+        width: 100%;
     }
     .headerContainer {
-        width:95%;
+        width: 95%;
     }
-
     .sectionContainer {
-        width:90%;
-        margin:20px;
+        width: 90%;
+        margin: 20px;
     }
-
     .project {
-        width:40%;
+        width: 40%;
     }
-
     input[type=submit] {
-        width: 100px; 
+        width: 100px;
     }
     #name {
-        font-size:20px;
-        margin-left:10px;
+        font-size: 20px;
+        margin-left: 10px;
     }
     #jenn {
-        width:20%;
+        width: 20%;
     }
-} 
+    .fa-linkedin {
+        float:none;
+        margin-left: 0;
+      }
+    
+      .fa-github {
+        float:none;
+        margin-left: 0;
+      }
+}
 
 @media screen and (max-width: 640px) {
     .wrapper {
-      width: 100%;
+        width: 100%;
     }
-      header {
-        position:static;
-        overflow:auto;
-    } 
-
+    header {
+        position: static;
+        overflow: auto;
+    }
     #name {
         float: none;
         display: block;
         text-align: center;
-         width:100%; 
-         font-size: 30px;
-         margin-left:0;
+        width: 100%;
+        font-size: 30px;
+        margin-left: 0;
     }
-    
     ul {
-        float:none;
-        width:100%;
+        width: 100%;
         text-align: center;
     }
-
     .headerContainer {
-        overflow:auto;
-    } 
-
+        overflow: auto;
+    }
     header {
-        position:static;
+        position: static;
         height: 150px;
     }
-
     .sectionContainer {
-        width:90%;
-        margin-left:20px;
+        width: 90%;
+        margin-left: 20px;
     }
-    
     .project {
-        width:90%;
+        width: 90%;
     }
-    
     input[type=submit] {
         width: 100px;
     }
-
     #jenn {
-        width:30%;
+        width: 30%;
     }
-} 
+    .fa-linkedin {
+        float:none;
+        margin-left: 0;
+      }
+    
+      .fa-github {
+        float:none;
+        margin-left: 0;
+      }
+    
+}
